@@ -1,0 +1,42 @@
+// Base SASS file.
+
+// Import directives for SASS files
+@import "helpers/_variables"
+@import "helpers/_mixins"
+@import "layout/_header"
+@import "layout/_footer"
+@import "layout/_home"
+@import "components/_navigation"
+
+
+// Import directives for fonts.
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans')
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Fjalla One', sans-serif;
+
+
+// Global Styles:
+
+body
+    font-family: $font-body
+
+h1
+    font-family: $font-header
+
+.btn-primary
+    background-color: $color-mid-blue
+    border-color: $color-mid-blue
+    transition: .2s
+    :hover
+        background-color: $color-light-blue
+        transition: .2s
+
+h1
+    color: $color-primary
+
+p
+    line-height: 1.6
+    font-size: 18px
+
+h2
+    font-size: 28px

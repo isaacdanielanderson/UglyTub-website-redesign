@@ -1,7 +1,6 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"sources": ["../sass/base.sass","../sass/layout/_header.sass","../sass/layout/_footer.sass","../sass/helpers/_variables.sass","../sass/layout/_home.sass"],
 "names": [],
 "file": "styles.css"
 }
