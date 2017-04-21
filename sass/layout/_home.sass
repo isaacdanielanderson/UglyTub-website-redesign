@@ -3,29 +3,32 @@
 .hero-section
     .jumbotron
         padding: 150px 0
-        background-image: url(../images/tub-hero.jpg)
-        background-repeat: no-repeat
+        background: url(../images/tub-hero.jpg) no-repeat center
         background-size: cover
-        background-position: center
         color: $color-white
         box-shadow: $box-shadow-small
 
     h1
         color: $color-white
         text-shadow: $text-shadow-primary
+        font-size: 9rem
     p
-        color: $color-primary
+        color: $color-light-blue
         text-shadow: $text-shadow-primary
-        font-size: 24px
+        font-size: 26px
 
 
 .services-home
-    margin-top: 80px
+    padding: 80px 0
     text-align: justify
-
     h2
         color: $color-primary
         font-weight: bold
+    img
+        +reg-image-styles
+
+.services .container > div:nth-child(3)
+    margin-top: 60px
 
 .big-cta
     margin-top: 80px
@@ -93,7 +96,6 @@
     width: 287px
     margin-top: 33px
 
-
 .logo3
     background-image: url(../images/home-depot-logo.png)
     height: 106px
@@ -104,3 +106,21 @@
     height: 106px
     width: 234px
     margin-top: 20px
+
+.intro-text-section
+    img
+        +reg-image-styles
+
+// services row
+.services-row
+    padding-top: 45px
+    padding-bottom: 10px
+    img
+        transition: .3s
+        opacity: .85
+        border: 1px solid $color-primary
+    a:hover img
+        box-shadow: $box-shadow-small
+        transform: scale(1.05)
+        transition: .3s
+        opacity: 1
