@@ -12,6 +12,9 @@
         color: $color-white
         text-shadow: $text-shadow-primary
         font-size: 9rem
+    @media (max-width: 500px)
+        h1
+            font-size: 6rem
     p
         color: $color-light-blue
         text-shadow: $text-shadow-primary
@@ -26,6 +29,11 @@
         font-weight: bold
         font-family: $font-header
         font-size: 32px
+
+    @media (max-width: 412px)
+        h2
+            text-align: left
+
     img
         +reg-image-styles
 
